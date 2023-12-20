@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+    height: 5rem;
+    width: 5rem;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7fdfc;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    
+}
+.landinfo {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+.formm {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.privacy {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.privacy span a {
+    color: rgba(46, 196, 182, 1);
+}
+ .forminfo {
+    width: 50%;
+    height: 90vh;
+}
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.landinfo p {
+    font-weight: lighter;
+    color: #404040; /* Grey color */
+
+}
+.forminfo form {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+}
+.forminfo form label {
+    text-align: left;
+    padding-bottom: 10px;
+
+}
+.forminfo form input,
+.forminfo form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 15px;
+    padding: 15px;
+    border: 0.5px solid rgba(62, 62, 62, 0.239);
+}
+.hid {
+    display: none;
+}
+.forminfo form div:nth-last-child(-n+2) {
+    grid-column: span 2;
+}
+.forminfo form input[type="password"] {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    border: 0.5px solid rgba(62, 62, 62, 0.239);
+}
+.registerbtn {
+    width: 100%;
+    background-color: rgba(46, 196, 182, 1); /* Green color */
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* mobile screen */
+@media screen and (max-width: 800px) {
+
+main {
+    height: 100%;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.forminfo form div:nth-last-child(-n+2) {
+    grid-column: span 1;
+}
+img {
+    height: 4rem;
+    width: 4rem;
+}
+h1 {
+    font-size: 22px;
+}
+.forminfo form {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.landinfo p {
+    color: #777; /* Grey color */
+    opacity: 0.7; 
+    font-weight: lighter;
+    font-size: 15px;
+}
+.landinfo, .forminfo {
+    width: 100%;
+}
+}
